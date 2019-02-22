@@ -1,0 +1,24 @@
+# Mac OS-X
+.DS_Store
+
+# Node / NPM
+node_modules/
+
+# Bower
+bower_components/
+
+# Jekyll
+_site/
+
+#uploads
+dist/uploads
+
+#dist-php-vendors
+dist/vendor
+
+#dev-files
+devp
+
+# IDE/Editor configs
+.idea/
+nbproject/

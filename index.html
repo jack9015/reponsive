@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="Enterprise Voice IM | Super fast voice messanger for teames, fleets and warehouse.">
+    <meta name="author" content="Shimul Dey">
+    <meta name="keywords" content="Enterprise Voice IM Messanger">
+    <link rel="manifest" href="manifest.json" /> <!-- Title Page-->
+    <title>Talkee</title> <!-- Fontfaces CSS-->
+    <link href="css/font-face.css" rel="stylesheet" media="all">
+    <link href="css/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="css/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="css/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <!-- <script src="js/recorder.js"></script>    <script src="https://cdn.webrtc-experiment.com/MediaStreamRecorder.js"> </script>    <script src="js/WebAudioRecorder.min.js"></script> -->
+    <!-- Bootstrap CSS-->
+    <!-- <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all"> -->
+    <!-- Vendor CSS-->
+    <!-- <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">    <link href="vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">    <link href="vendor/wow/animate.css" rel="stylesheet" media="all">    <link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">    <link href="vendor/slick/slick.css" rel="stylesheet" media="all">    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">    <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all"> -->
+    <!-- Main CSS-->
+    <!-- <link href="css/theme.css" rel="stylesheet" media="all"> -->
+    <!-- <link href="dist/vendorsCSS.css?v=1.0.756412879" rel="stylesheet" media="all">    <link href="dist/app.css?v=1.0.756412879" rel="stylesheet" media="all"> -->
+
+    <script type="text/javascript">
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+        }
+    </script>
+    <script src="voicelayersdk/voicelayer.js"></script>
+</head>
+<link href="custom.css" rel="stylesheet" />
+
+<body class="">
+    <div class="page-wrapper" id="regsteps" style="display:none">
+        <div class="page-content--bge5 pageback">
+            <div class="container-fluid h-100 p-0">
+                <div class="row h-100 justify-content-center align-items-center flex-grow-1">
+                    <!-- LOGIN PAGE -->
+                    <div class="col-lg-12 h-100 login-wrap page" id="page-login">
+                        <div class="login-content h-100">
+                            <div class="login-logo fixed-top">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="logo-left header-left"> <a href="#"><img src="images/logo.png"
+                                                        alt="Enterprise Voice IM"></a> </div>
+                                            <!--<div class="logo-right">                                                    <h1>Enterprise</h1>                                                    <h1 class="textLeft">Voice IM</h1>                                                </div>                                                -->
+                                            <div class="header-right"> <a href="">Support <img src="images/support-icon.png" /></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="login-body regsigninfromwrap">
+                                <div class="row">
+                                    <div class="col-lg-12 text-center">
+                                        <div class="login-text">
+                                            <h2 class="title">Register or sign in with your Google account</h2>
+                                            
+                                                    
+                                                    
+                                                
+                                            <form action="" method="post" class="form-horizontal" data-state="signup">
+                                                    <div class="row sufee-alert alert with-close alert-danger alert-dismissible fade app-alert regsign-error">                                                                  <span class="errorlist"></span>
+                                                            
+                                                            
+                                                        </div>
+                                                            <div class="namegroup row form-group">
+                                                                <div class="col-6 pl-0">
+                                                                    <input id="formregs-name"   name="name" type="text" placeholder="Name" class="appinput-back-1 form-control" required>
+                                                                </div>
+                                                                <div class="col-6 pr-0">
+                                                                    <input  id="formregs-surname"  name="surname" type="text" placeholder="Surname" class="appinput-back-1 form-control">
+                                                                </div>
+                                                            </div>
+                                                            <div class="row form-group">                             
+                                                                    <input  id="formregs-email"   name="email" type="email"  placeholder="Email"   class="form-control  appinput-back-1" required>
+                                                            </div>
+                                                            <div class="row form-group passgroup">
+                                                                    <div class="input-group">
+                                                                        <input type="password" id="password2" name="password2" placeholder="Password" class="form-control appinput-back-1">
+                                                                        <div class="passshowtoggle input-group-addon" required >
+                                                                            <i class="fa fa-eye"></i>
+                                                                        </div>
+                                                                    </div>
+                                                            </div>
+                                                            <div class="row form-actions form-group regsignbtnwrap">
+                                                                    <!-- <a href="#" id="regsigninlink">Sign In</a>  -->   
+                                                                <button type="submit" class="regsignbtn btn btn-lg btn-success  p-20  border-radius-100px">CREATE ACCOUNT</button>
+                                                                    
+                                                            </div>
+                                                    
+                                                <div class="social-login-content">
+                                                    <p class="gtitle"> Or Sign up with google</p>
+                                                    <!--<div class="social-button textCenter">                                                            <img src="images/gsignin.png" alt="sign in with google" class="cursorPointer" id="sign-in-withgoogle">                                                        </div>-->
+                                                    <button type="button" class="google-button" id="sign-in-withgoogle">
+                                                        <span class="google-button__icon"> <svg viewBox="0 0 366 372"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M125.9 10.2c40.2-13.9 85.3-13.6 125.3 1.1 22.2 8.2 42.5 21 59.9 37.1-5.8 6.3-12.1 12.2-18.1 18.3l-34.2 34.2c-11.3-10.8-25.1-19-40.1-23.6-17.6-5.3-36.6-6.1-54.6-2.2-21 4.5-40.5 15.5-55.6 30.9-12.2 12.3-21.4 27.5-27 43.9-20.3-15.8-40.6-31.5-61-47.3 21.5-43 60.1-76.9 105.4-92.4z"
+                                                                    id="Shape" fill="#EA4335" />
+                                                                <path d="M20.6 102.4c20.3 15.8 40.6 31.5 61 47.3-8 23.3-8 49.2 0 72.4-20.3 15.8-40.6 31.6-60.9 47.3C1.9 232.7-3.8 189.6 4.4 149.2c3.3-16.2 8.7-32 16.2-46.8z"
+                                                                    id="Shape" fill="#FBBC05" />
+                                                                <path d="M361.7 151.1c5.8 32.7 4.5 66.8-4.7 98.8-8.5 29.3-24.6 56.5-47.1 77.2l-59.1-45.9c19.5-13.1 33.3-34.3 37.2-57.5H186.6c.1-24.2.1-48.4.1-72.6h175z"
+                                                                    id="Shape" fill="#4285F4" />
+                                                                <path d="M81.4 222.2c7.8 22.9 22.8 43.2 42.6 57.1 12.4 8.7 26.6 14.9 41.4 17.9 14.6 3 29.7 2.6 44.4.1 14.6-2.6 28.7-7.9 41-16.2l59.1 45.9c-21.3 19.7-48 33.1-76.2 39.6-31.2 7.1-64.2 7.3-95.2-1-24.6-6.5-47.7-18.2-67.6-34.1-20.9-16.6-38.3-38-50.4-62 20.3-15.7 40.6-31.5 60.9-47.3z"
+                                                                    fill="#34A853" /></svg> </span> <span class="google-button__text gregsignbtn">Sign
+                                                            in with Google</span> </button> </div>
+                                            </form>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<div class="login-form fixed-bottom">                                                                    </div>-->
+                        </div>
+                    </div> <!-- PORTAL PAGE -->
+                    <div class="col-lg-6 h-100 page" id="page-portal_select" style="">
+                        <div class="joincreateportaldesktop container mtp-middle d-sm-none d-xs-none d-lg-block d-md-block d-none">
+                            <div class="login-logo fixed-top">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="logo-left header-left"> <a href="#"><img src="images/logo.png"
+                                                        alt="Enterprise Voice IM"></a> </div>
+                                            <!--<div class="logo-right">                                                <h1>Enterprise</h1>                                                <h1 class="textLeft">Voice IM</h1>                                            </div>                                            -->
+                                            <div class="header-right"> <a href="">Support <img src="images/support-icon.png" /></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <form action="" method="post" class="join-or-create-portal" novalidate="novalidate" id="join-or-create-portal">
+                                <div class="row">
+                                    <div class="col-sm-12 mb-4">
+                                        <h5 class="mb-2 text-center mont">Create or join a portal</h5>
+                                    </div>
+                                    <div class="col-sm br1">
+                                        <div class="form-group">
+                                            <h6 class="mb-2 myriad">Create a portal by entering a name</h6> <input id="createportaltext"
+                                                name="cc-payment" type="text" class="form-control createportaltext appinput-back-1 input-style-1"
+                                                aria-required="true" aria-invalid="false" value="" placeholder="Portal name">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h6 class="mb-2">Join on existing portal</h6>
+                                        <div class="portal-list-wrapper p-2 mb-1">
+                                            <div class="form-group"> <input id="portal-search" name="cc-payment" type="text"
+                                                    class="form-control portalinput" aria-required="true" aria-invalid="false"
+                                                    value="" placeholder="Portal name"> </div>
+                                            <div class="top-campaign p-2 m-0 portallist-holder">
+                                                <h6 class=" m-b-5">SIMILIAR</h6>
+                                                <div class="table-responsive">
+                                                    <table class="table table-top-campaign">
+                                                        <tbody id="searched-portal-list"> </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 text-center"> <button id="back-portal-button" type="submit"
+                                            class="btn btn-lg btn-default  p-20 mt-3 border-radius-100px" style="width:150px">
+                                            <span id="back-button" class="back-button">BACK</span> </button> <button id="join-portal-button"
+                                            type="submit" class="btn btn-lg btn-success  p-20 mt-3 border-radius-100px"
+                                            style="width:150px"> <span id="join-button">JOIN</span> <span id="payment-button-sending"
+                                                style="display:none;">Sending…</span> </button> </div>
+                                </div>
+                            </form>
+                            <form action="" class="join-or-create-portal-pass" method="post" novalidate="novalidate" id="join-or-create-portal-pass" style="display: none">
+                                    <div class="row">
+                                        <div class="col-sm-12 mb-4">
+                                            <h5 class="mb-2 text-center mont title1">Protected Portal</h5>
+                                        </div>
+                                        <div class="col-sm-12 ">
+                                            <div class="form-group">
+                                                <h6 class="mb-2 myriad title2">Enter password to join portal</h6>
+                                                <input id="portaljoinpassinput" name="cc-payment" type="password" class="form-control appinput-back-1"
+                                                    aria-required="true" aria-invalid="false" value="" placeholder="password">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-sm-12 text-center"> <button id="back-portal-onsignin-button-pass" type="button"
+                                                class="btn btn-lg btn-default p-20 mt-3 border-radius-100px" style="width:150px">
+                                                <span class="back-button" id="back-button">BACK</span> </button>&nbsp;&nbsp;
+                                            <button id="join-portal-onsignin-button-pass" type="submit" class="btn btn-lg btn-success  p-20 mt-3 border-radius-100px"
+                                                style="width:150px"> <span id="join-button">JOIN</span> <span id="payment-button-sending"
+                                                    style="display:none;">Sending…</span> </button> </div>
+                                    </div>
+                                </form>
+                        </div>
+                        <div class="card h-100 joincreateportalmobile d-lg-none d-md-none">
+                            <div class="login-logo fixed-top">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="logo-left header-left"> <a href="#"><img src="images/logo.png"
+                                                        alt="Enterprise Voice IM"></a> </div>
+                                            <!--<div class="logo-right">                                                <h1>Enterprise</h1>                                                <h1 class="textLeft">Voice IM</h1>                                            </div>                                             -->
+                                            <div class="header-right"> <a href="">Support <img src="images/support-icon.png" /></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-header font-weight-bold">Create or join a portal <span class="sign-out pull-right cursorPointer"
+                                    id="sign-out">Sign Out</span></div>
+                            <div class="card-body">
+                                <form action="" class="join-or-create-portal" method="post" novalidate="novalidate" id="join-or-create-portal">
+                                    <div class="form-group">
+                                        <!-- <label for="cc-payment" class="control-label mb-2">Create a portal by entering a name</label> -->
+                                        <h5 class="mb-2 title2">Create a portal by entering a name</h5> <input id="createportaltext"
+                                            name="cc-payment" type="text" class="form-control createportaltext appinput-back-1"
+                                            aria-required="true" aria-invalid="false" value="">
+                                    </div>
+                                    <hr>
+                                    <h5 class="mb-2 title2">Join on existing portal</h5>
+                                    <div class="portal-list-wrapper p-2 mb-1">
+                                        <div class="form-group"> <input id="portal-search" name="cc-payment" type="text"
+                                                class="form-control portalinput" aria-required="true" aria-invalid="false"
+                                                value="" placeholder="Portal name"> </div>
+                                        <div class="top-campaign p-2 m-0 portallist-holder">
+                                            <h6 class=" m-b-5">SIMILIAR</h6>
+                                            <div class="table-responsive">
+                                                <table class="table table-top-campaign">
+                                                    <tbody id="searched-portal-list"> </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div> <button id="back-portal-button" type="submit" class="btn btn-lg btn-gray btn-block p-20 mt-3 border-radius-100px"
+                                            s> &nbsp; <span id="back-button" class="back-button">BACK</span> </button>
+                                        <button id="join-portal-button" type="submit" class="btn btn-lg btn-success btn-block p-20 mt-3 border-radius-100px"
+                                            s> &nbsp; <span id="join-button">JOIN</span> <span id="payment-button-sending"
+                                                style="display:none;">Sending…</span> </button> </div>
+                                </form>
+                                <form action="" class="join-or-create-portal-pass" method="post" novalidate="novalidate" id="join-or-create-portal-pass" style="display: none">
+                                        <div class="row">
+                                            <div class="col-sm-12 mb-4">
+                                                <h5 class="mb-2 text-center mont title1">Protected Portal</h5>
+                                            </div>
+                                            <div class="col-sm-12 ">
+                                                <div class="form-group">
+                                                    <h6 class="mb-2 myriad title2">Enter password to join portal</h6>
+                                                    <input id="portaljoinpassinput" name="cc-payment" type="password" class="form-control appinput-back-1"
+                                                        aria-required="true" aria-invalid="false" value="" placeholder="password">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-sm-12 text-center"> <button id="back-portal-onsignin-button-pass" type="button"
+                                                    class="btn btn-lg btn-default p-20 mt-3 border-radius-100px" style="width:150px">
+                                                    <span class="back-button" id="back-button">BACK</span> </button>&nbsp;&nbsp;
+                                                <button id="join-portal-onsignin-button-pass" type="submit" class="btn btn-lg btn-success  p-20 mt-3 border-radius-100px"
+                                                    style="width:150px"> <span id="join-button">JOIN</span> <span id="payment-button-sending"
+                                                        style="display:none;">Sending…</span> </button> </div>
+                                        </div>
+                                    </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 h-100 page" id="page-enterusername" style="">
+                        <div class="login-logo fixed-top">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="logo-left header-left"> <a href="#"><img src="images/logo.png" alt="Enterprise Voice IM"></a>
+                                        </div>
+                                        <!--<div class="logo-right">                                                <h1>Enterprise</h1>                                                <h1 class="textLeft">Voice IM</h1>                                            </div>                                             -->
+                                        <div class="header-right"> <a href="">Support <img src="images/support-icon.png" /></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card username-card">
+                            <div class="card-header text-center"> <strong class="card-title mb-3 title1 text-center mont">Please
+                                    enter a username</strong> </div>
+                            <div class="card-body row align-items-center">
+                                <div class="mx-auto d-block" style=""> <input id="cc-pament" name="cc-payment " type="text"
+                                        class="form-control usernametakeinput" aria-required="true" aria-invalid="false"
+                                        value="" placeholder=""> </div>
+                            </div>
+                            <div class="card-footer ">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"> <button id="button" type="button"
+                                            class="backtoportal btn btn-lg btn-block btn-app-cancel border-radius-100px"
+                                            s=""> <span id="join-button">BACK</span> </button> </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"> <button id="button" type="button"
+                                            class="nexttoavatar btn btn-lg btn-block btn-app-ok border-radius-100px" s="">
+                                            <span id="join-button">NEXT</span> </button> </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 h-100 page" id="page-enteravatar" style="">
+                        <div class="card h-100">
+                            <div class="card-header"> <strong class="card-title mb-3">Please choose an avatar</strong>
+                            </div>
+                            <div class="card-body row align-items-center">
+                                <div class="mx-auto d-block app-color-ok font-size5rem" style="">
+                                    <!-- <input id="cc-pament" name="cc-payment " type="file" class="form-control usernametakeinput" aria-required="true" aria-invalid="false" value="" placeholder="" > -->
+                                    <form action="" id="uploadAvatarForm"> <input id="avatarCapture" type="file"
+                                            capture="" style="display: none;"> <i class="fa fa-plus cursorPointer" id="uploadAvatarTrigger"></i>
+                                        <img id="uploadedAvatar" class="rounded-circle mx-auto d-block" src="images/icon/avatar-01.jpg"
+                                            alt="Card image cap" style="display: none !important;"> </form>
+                                </div>
+                            </div>
+                            <div class="card-footer ">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"> <button id="button" type="button"
+                                            class="backtoportal btn btn-lg btn-block btn-app-cancel border-radius-100px"
+                                            s=""> <span id="join-button">BACK</span> </button> </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"> <button id="" type="button" class="nextodashboard btn btn-lg btn-block btn-app-ok border-radius-100px"
+                                            s=""> <span id="join-button">NEXT</span> </button> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 h-100 page" id="page-join-portal-onsignin" style="">
+                        <div class="joincreateportaldesktop container mtp-middle d-sm-none d-xs-none d-lg-block d-md-block d-none">
+                            <div class="login-logo fixed-top">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="logo-left header-left"> <a href="#"><img src="images/logo.png"
+                                                        alt="Enterprise Voice IM"></a> </div>
+                                            <!--<div class="logo-right">                                                <h1>Enterprise</h1>                                                <h1 class="textLeft">Voice IM</h1>                                            </div>                                            -->
+                                            <div class="header-right"> <a href="">Support <img src="images/support-icon.png" /></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <form action="" class="join-or-create-portal" method="post" novalidate="novalidate" id="join-or-create-portal">
+                                <div class="row">
+                                    <div class="col-sm-12 mb-4">
+                                        <h5 class="mb-2 text-center mont title1">Create or join a portal</h5>
+                                    </div>
+                                    <div class="col-sm br1">
+                                        <div class="form-group">
+                                            <h6 class="mb-2 myriad title2">Create a portal by entering a name</h6>
+                                            <input id="createportaltext" name="cc-payment" type="text" class="form-control createportaltext appinput-back-1"
+                                                aria-required="true" aria-invalid="false" value="" placeholder="Portal name">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h6 class="mb-2 myriad title2">Join on existing portal</h6>
+                                        <div class="portal-list-wrapper p-2 mb-1">
+                                            <div class="form-group"> <input id="portal-search" name="cc-payment" type="text"
+                                                    class="form-control portalinput" aria-required="true" aria-invalid="false"
+                                                    value="" placeholder="Portal name"> </div>
+                                            <div class="top-campaign p-2 m-0 portallist-holder">
+                                                <h6 class=" m-b-5">SIMILIAR</h6>
+                                                <div class="table-responsive">
+                                                    <table class="table table-top-campaign">
+                                                        <tbody id="searched-portal-list"> </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 text-center"> <button id="back-portal-onsignin-button" type="button"
+                                            class="btn btn-lg btn-default p-20 mt-3 border-radius-100px" style="width:150px">
+                                            <span class="back-button" id="back-button">BACK</span> </button>&nbsp;&nbsp;
+                                        <button id="join-portal-onsignin-button" type="submit" class="btn btn-lg btn-success  p-20 mt-3 border-radius-100px"
+                                            style="width:150px"> <span id="join-button">JOIN</span> <span id="payment-button-sending"
+                                                style="display:none;">Sending…</span> </button> </div>
+                                </div>
+                            </form>
+                            <form action="" class="join-or-create-portal-pass" method="post" novalidate="novalidate" id="join-or-create-portal-pass" style="display: none">
+                                    <div class="row">
+                                        <div class="col-sm-12 mb-4">
+                                            <h5 class="mb-2 text-center mont title1">Protected Portal</h5>
+                                        </div>
+                                        <div class="col-sm-12 ">
+                                            <div class="form-group">
+                                                <h6 class="mb-2 myriad title2">Enter password to join portal</h6>
+                                                <input id="portaljoinpassinput" name="cc-payment" type="password" class="form-control appinput-back-1"
+                                                    aria-required="true" aria-invalid="false" value="" placeholder="password">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-sm-12 text-center"> <button id="back-portal-onsignin-button-pass" type="button"
+                                                class="btn btn-lg btn-default p-20 mt-3 border-radius-100px" style="width:150px">
+                                                <span class="back-button" id="back-button">BACK</span> </button>&nbsp;&nbsp;
+                                            <button id="join-portal-onsignin-button-pass" type="submit" class="btn btn-lg btn-success  p-20 mt-3 border-radius-100px"
+                                                style="width:150px"> <span id="join-button">JOIN</span> <span id="payment-button-sending"
+                                                    style="display:none;">Sending…</span> </button> </div>
+                                    </div>
+                                </form>
+                        </div>
+                        <div class="joincreateportalmobile container card createportalcard h-100 d-lg-none d-md-none">
+                            <div class="login-logo fixed-top">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="logo-left header-left"> <a href="#"><img src="images/logo.png"
+                                                        alt="Enterprise Voice IM"></a> </div>
+                                            <!--<div class="logo-right">                                                <h1>Enterprise</h1>                                                <h1 class="textLeft">Voice IM</h1>                                            </div>                                            -->
+                                            <div class="header-right"> <a href="">Support <img src="images/support-icon.png" /></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-header font-weight-bold"><br>
+                                <h5 class="mb-2 text-center mont title1">Create or join a portal</h5>
+                            </div>
+                            <div class="card-body createportalcardbody">
+                                <form action="" class="join-or-create-portal" method="post" novalidate="novalidate" id="join-or-create-portal">
+                                    <div class="">
+                                        <div class="form-group">
+                                            <!-- <label for="cc-payment" class="control-label mb-2">Create a portal by entering a name</label> -->
+                                            <h5 class="mb-2">Create a portal by entering a name</h5> <input id="createportaltext"
+                                                name="cc-payment" type="text" class="form-control createportaltext appinput-back-1"
+                                                aria-required="true" aria-invalid="false" value="" placeholder="Portal name">
+                                        </div>
+                                        <hr>
+                                        <h5 class="mb-2">Join on existing portal</h5>
+                                        <div class="portal-list-wrapper p-2 mb-1">
+                                            <div class="form-group"> <input id="portal-search" name="cc-payment" type="text"
+                                                    class="form-control portalinput" aria-required="true" aria-invalid="false"
+                                                    value="" placeholder="Portal name"> </div>
+                                            <div class="top-campaign p-2 m-0 portallist-holder">
+                                                <h6 class=" m-b-5">SIMILIAR</h6>
+                                                <div class="table-responsive">
+                                                    <table class="table table-top-campaign">
+                                                        <tbody id="searched-portal-list"> </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div> <button id="join-portal-onsignin-button" type="submit" class="btn btn-lg btn-success btn-block p-20 mt-3 border-radius-100px"
+                                            s> &nbsp; <span id="join-button">JOIN</span> <span id="payment-button-sending"
+                                                style="display:none;">Sending…</span> </button> </div>
+                                </form>
+                                <form action="" class="join-or-create-portal-pass" method="post" novalidate="novalidate" id="join-or-create-portal-pass" style="display: none">
+                                        <div class="row">
+                                            <div class="col-sm-12 mb-4">
+                                                <h5 class="mb-2 text-center mont title1">Protected Portal</h5>
+                                            </div>
+                                            <div class="col-sm-12 ">
+                                                <div class="form-group">
+                                                    <h6 class="mb-2 myriad title2">Enter password to join portal</h6>
+                                                    <input id="portaljoinpassinput" name="cc-payment" type="password" class="form-control appinput-back-1"
+                                                        aria-required="true" aria-invalid="false" value="" placeholder="password">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-sm-12 text-center"> <button id="back-portal-onsignin-button-pass" type="button"
+                                                    class="btn btn-lg btn-default p-20 mt-3 border-radius-100px" style="width:150px">
+                                                    <span class="back-button" id="back-button">BACK</span> </button>&nbsp;&nbsp;
+                                                <button id="join-portal-onsignin-button-pass" type="submit" class="btn btn-lg btn-success  p-20 mt-3 border-radius-100px"
+                                                    style="width:150px"> <span id="join-button">JOIN</span> <span id="payment-button-sending"
+                                                        style="display:none;">Sending…</span> </button> </div>
+                                        </div>
+                                    </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- dashboard start -->
+    <div class="page-wrapper page" id="page-dahsboard" style="display:none">
+        <!-- MENU SIDEBAR-->
+        <aside class="menu-sidebar2">
+            <div class="menu-sidebar2__content js-scrollbar1 ps">
+                <div class="menu-sidebar2-sec1">
+                    <div class="account2">
+                        <div class="image img-cir img-55 toggleSettings cursorPointer"> <img src="images/icon/avatar-big-01.jpg"
+                                alt="John Doe" class="cuserAvatar"> </div>
+                    </div>
+                    <div class="notifcation-btnwrap desktopsbwrap"> <a href=""><img src="images/Notifications.png"
+                                class="notificationiconimg" /></a> <span class="notification-deskbtn-counter" style="display:none"></span>
+                    </div>
+                </div>
+                <div class="menu-sidebar2-seperator"></div>
+                <div class="menu-sidebar2-sec2">
+                    <div class="soundiconimg sound-on-off desktop-sidebar-button sound-button desktopsbwrap backroundrad">
+                        <span></span> </div>
+                    <div class="autoplayiconimg sound-autoplay desktop-sidebar-button autoplay-button desktopsbwrap backroundrad">
+                        <span></span> </div>
+                    <div class="user-sidbarstatus desktop-sidebar-button Online"> <span>Online</span> <span><i class="fa fa-circle"></i></span>
+                    </div>
+                    <!--div data-recording="0" class="sound-record desktop-sidebar-button record-trigger"> <span><img src="images/Record-white.png" /></span>
+                    </div-->
+
+                    <div class="sound-record desktop-sidebar-button vlayer-record"> <span><img src="images/Record-white.png" /></span>
+                    </div>
+                </div>
+                <div class="menu-sidebar2-seperator"></div>
+                <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+                    <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps__rail-y" style="top: 0px; height: 566px; right: 0px;">
+                    <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 495px;"></div>
+                </div>
+                <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+                    <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps__rail-y" style="top: 0px; height: 288px; right: 0px;">
+                    <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 128px;"></div>
+                </div>
+                <div class="ps__rail-x" style="width: 99px; left: 0px; bottom: 0px;">
+                    <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps__rail-y" style="top: 0px; height: 288px; right: 0px;">
+                    <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                </div>
+            </div>
+        </aside> <!-- END MENU SIDEBAR-->
+        <!-- HEADER DESKTOP-->
+        <header class="header-desktop2">
+            <div class="section__content section__content--p30">
+                <div class="container-fluid">
+                    <div class="header-wrap2">
+                        <div class="image img-cir img-40 toggleSettings cursorPointer d-lg-none d-xl-none"> <img src="images/icon/avatar-big-01.jpg"
+                                alt="John Doe" class="cuserAvatar"> </div>
+                        <div class="d-xs-none d-sm-none d-xl-block d-lg-block  d-none">
+                            <div class="active-portal-name-wrapper">
+                                <div class="backbutton showmaindashboard"> <img src="images/Back.png" class="icon-large">
+                                </div>
+                                <div class="iapnw">
+                                    <div class="icondiv"> <img src="images/Channel1.png" height="30" class="icon" />
+                                    </div>
+                                    <div class="active-portal-name"> <span class="backtomainportal cursorPointer activePortallName">Portal
+                                            /</span> <span class="activeChannelName cursorPointer">Lobby</span> <span
+                                            class="channel-leave-btn cursorPointer">Leave</span> <span class="channel-delete-btn cursorPointer">Delete</span>
+                                    </div>
+                                    <div class="subtitlediv">Active</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-xs-none d-sm-none d-xl-block d-lg-block  d-none pull-right">
+                            <div class="form-group search-field active-channel-users-search searchChannelOrUsers">
+                                <div class="blinkcursor input-group mt-2 mr-sm-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text"><img src="images/Search_Dark.png" class="icon15" /></div>
+                                    </div> <input type="text" class="form-control" id="" placeholder=""> <i></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-button2 d-lg-none d-xl-none">
+                            <div class="header-button-item mr-0 js-sidebar-btn d-none"> <i class="zmdi zmdi-menu"></i>
+                            </div>
+                            <div class="header-button-item mr-0 notifications-button backroundrad"> <span></span> </div>
+                            <div class="backroundrad header-button-item mr-0 autoplay-button"> <span></span> </div>
+                            <!-- <div class="backroundrad header-button-item mr-0 sound-button">                                <span></span>                            </div> -->
+                            <div class="setting-menu js-right-sidebar">
+                                <div class="account-dropdown__body">
+                                    <div class="account-dropdown__item createChannel"> <a href="#"> <i class="fa fa-circle"></i>Create
+                                            Channel</a> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <header class="header-settings">
+            <div class="section__content section__content--p30">
+                <div class="container-fluid">
+                    <div class="header-wrap2 header-wrap-left"> <span class="settings-title showmaindashboard"><img src="images/Back.png"
+                                class="icon-large"> </span> <span class="header-title-text">Settings</span> </div>
+                </div>
+            </div>
+        </header>
+        <header class="header-exploreportal">
+            <div class="section__content section__content--p30">
+                <div class="container-fluid">
+                    <div class="header-wrap2"> <span class="settings-title showmaindashboard"><img src="images/Back.png"
+                                class="icon-large"> </span> <span class="header-title-text pull-right activePortallName-s"></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <header class="header-createchannel">
+            <div class="section__content section__content--p30">
+                <div class="container-fluid">
+                    <div class="header-wrap2"> <span class="settings-title showmaindashboard"><img src="images/Back.png"
+                                class="icon-large"> </span> <span class="header-title-text pull-right ">Create Channel</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <header class="header-addps">
+            <div class="section__content section__content--p30">
+                <div class="container-fluid">
+                    <div class="header-wrap2">
+                        <div class="addpsbuttonsicons">
+                            <div class="showmaindashboard"> <img src="images/Back.png" class="icon-large"> </div>
+                            <div class="addpsbuttonsicons header-icons">
+                                <div> <span class="pstopbadge" data-id="people">People</span> <span class="pstopbadge active"
+                                        data-id="services">Services</span> </div>
+                            </div>
+                        </div> <span class="header-title-text pull-right"> <span class="show-xs">People &amp; Services</span>
+                            <div class="hide-xs col-md-12 maxheight56 pl-0 search-field">
+                                <div class="form-group search-field active-channel-users-search searchChannelOrUsers mr-2 search-add">
+                                    <div class="blinkcursor input-group mt-2 mr-sm-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><img src="images/Search_Dark.png" class="icon15" /></div>
+                                        </div> <input type="text" class="form-control" id="" placeholder=""> <i></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </header> <!-- PAGE CONTAINER-->
+        <div class="page-container2 m-t-150" style="">
+            <div class="row h-100 justify-content-center align-items-center flex-grow-1  settingsPage  dashboardPage">
+                <div class="col-lg-4 app-settings col-md-6 mx-auto h-100">
+                    <div class=" h-100">
+                        <!-- <div class="card-header">                            <strong class="card-title mb-3"><i class="fa fa-chevron-left cursorPointer showmaindashboard mr-3"></i>Settings <span class="pull-right cursorPointer" id="sign-out">Sign Out</span></strong>                        </div> -->
+                        <div class="">
+                            <div class="mx-auto d-block mb-5"> <span class="settingsAvatarStatus settingsAvatarStatussettings image iconImage mx-auto d-block cursorPointer centerIconWrap"
+                                    style="" data-status="Online"> <img class="rounded-circle cuserAvatar w-25" src="images/icon/blank100.png"
+                                        alt=""> </span> </div>
+                            <div class="custom-tab mb-2" id="settings-tab">
+                                <nav>
+                                    <div class="nav nav-tabs" id="nav-tab" role="tablist"> <a class="nav-item nav-link active show"
+                                            id="custom-nav-home-tab" data-toggle="tab" href="#custom-nav-home" role="tab"
+                                            aria-controls="custom-nav-home" aria-selected="true">Overview</a> <a class="nav-item nav-link"
+                                            id="custom-nav-profile-tab" data-toggle="tab" href="#custom-nav-profile"
+                                            role="tab" aria-controls="custom-nav-profile" aria-selected="false">Accounts</a>
+                                    </div>
+                                </nav>
+                                <div class="tab-content pt-2" id="nav-tabContent">
+                                    <div class="tab-pane p-3 fade active show" id="custom-nav-home" role="tabpanel"
+                                        aria-labelledby="custom-nav-home-tab">
+                                        <ul class="list-group settings-list list-group-flush app-list mb-2">
+                                            <li class="list-group-item "> <span class="pull-left lgil"><i class="fa fa-user"></i>
+                                                    Name</span> <span class="pull-right cursorPointer settingsUsername"
+                                                    data-toggle="modal" data-target="#staticModal"></span>
+                                            </li>
+                                            <li class="list-group-item"> <span class="pull-left  lgil"><i class="fa fa-comment"></i>
+                                                    Status</span> <span class="pull-right myriad cyan cursorPointer settingsUserstatus"
+                                                    data-toggle="modal" data-target="#statusmodel">Online</span> </li>
+                                            <li class="list-group-item"> <span class="pull-left  lgil"><i class="fa fa-camera"></i>
+                                                    Profile Picture</span> <span class="pull-right cursorPointer profile-picture-add"
+                                                    data-toggle="modal" data-target="#avatarModal">+</span> </li>
+                                            <li class="list-group-item"> <span class="pull-left  lgil"><i class="fa fa-bell"></i>
+                                                    Notification</span> <span class="pull-right"> <label class="switch switch-default switch-pill switch-success">
+                                                        <input type="checkbox" id="notificationCheckbox" class="switch-input"
+                                                            checked="true"> <span class="switch-label"></span> <span
+                                                            class="switch-handle"></span> </label> </span> </li>
+                                        </ul> <a href="#" id="sign-out" class="myriad btn btn-block btn-outline-success btn-cusrad btn-plain">SIGN
+                                            OUT</a>
+                                    </div>
+                                    <div class="tab-pane p-3 fade" id="custom-nav-profile" role="tabpanel"
+                                        aria-labelledby="custom-nav-profile-tab">
+                                        <ul class="list-group list-group-flush app-list">
+                                            <li class="list-group-item ">
+                                                <div class="pull-left"> <span class="cuspor-icon">T</span>
+                                                    <div class="cuspor-meta"> <span class="activePortallName-s"></span>
+                                                        <span class="activePortallName-surl"></span> </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item"> <span class="pull-left lgil"> Plan Type</span>
+                                                <span class="pull-right cursorPointer ">Trial</span> </li>
+                                            
+                                        </ul>
+                                        <div class="mx-auto d-block mt-5 text-center settings-buttons"> <a href="#" id="deletePortal"
+                                                class="btn btn-success mr-2 btn-cusrad">Delete Portal</a> <a href="#"
+                                                id="" class="btn btn-outline-success btn-cusrad">Delete Account</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row h-100 justify-content-center align-items-center flex-grow-1  dashboardPage createChannelPage "
+                style="">
+                <div class="col-lg-6 col-md-6 mx-auto h-100">
+                    <div class="card h-100">
+                        <div class="card-header font-weight-bold d-sm-none d-xs-none d-none d-lg-block d-md-block"> <i
+                                class="fa fa-chevron-left cursorPointer showmaindashboard mr-3"></i> Create a channel
+                        </div>
+                        <div class="card-body">
+                            <form action="" method="post" novalidate="novalidate" id="create-channel-form">
+                                <div class="form-group">
+                                    <!-- <label for="cc-payment" class="control-label mb-2">Create a portal by entering a name</label> -->
+                                    <h5 class="mb-2">Create a channel by entering a name</h5> <input id="createChanneltext"
+                                        name="cc-payment" type="text" class="form-control appinput-back-1"
+                                        aria-required="true" aria-invalid="false" value="" placeholder="Channel name">
+                                </div>
+                                <div class="text-center"> <button id="create-channel-button" type="submit" class="btn btn-lg btn-success  p-20 mt-3 mb-3 border-radius-100px">
+                                        <span id="join-button">Create</span> <span id="payment-button-sending" style="display:none;">Sending…</span>
+                                    </button> </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row h-100 justify-content-center align-items-center flex-grow-1  dashboardPage enterChannelPage position-relative"
+                style="">
+                <div class="col-lg-11 desk-ml-100 p-0 h-100">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group search-field d-lg-none d-xl-none">
+                                        <div class="input-group mb-2 mr-sm-2">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text"><img src="images/Search_Dark.png" class="icon15" /></div>
+                                            </div> <input type="text" class="form-control" id="showotherchannelsonportal"
+                                                placeholder="Search Channels">
+                                        </div>
+                                    </div>
+                                    <div class="roundIconsWrap">
+                                        <div class="iconItem createChannel"> <span class="image iconImage cursorPointer centerIconWrap"
+                                                style=""> <img src="images/Create_Channel.png" class="icon-large" />
+                                            </span> <span class="iconName" style="color: #69cfa4;">Create</span> </div>
+                                    </div>
+                                    <div class="roundIconsWrap portalchannelsholder"> </div>
+                                    <div class="channel-join-requests">
+                                        <ul class="otheruserschannelonportal roundIconsWrap"> </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-lg-12">
+                                    <!-- <div class="channel-join-requests">                                                                                                                                    <ul class="mb-5 otheruserschannelonportal roundIconsWrap">                                                                                                </ul>                                        </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 activeportalshoweronmobile d-lg-none d-xl-none">
+                    <div class="shadow-sm p-3 ml-2 mb-3 mr-2 bg-white rounded">
+                        <div class="active-portal-name-wrapper d-flex flex-wrap ">
+                            <div class="active-portal-name">
+                                <div class="container p-0">
+                                    <div class="row">
+                                        <div class="col-xs-8 p-0">
+                                            <div class="icondiv" style="            display: inline;            "> <img
+                                                    src="images/Channel1.png" class="icon" /> </div>
+                                            <div class="activepnamebox"> <span class="backtomainportal cursorPointer activePortallName">matakelo
+                                                    / </span> <span class="activeChannelName cursorPointer">Lobby
+                                                </span>
+                                                <div class="subtitlediv">Active</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-4 text-left"> <span class="channel-leave-btn cursorPointer"
+                                                style="">Leave</span> <span class="channel-delete-btn cursorPointer"
+                                                style="display: none;">Delete</span> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row h-100 justify-content-center align-items-center flex-grow-1  dashboardPage addUserToChannelPage " style="">
+                <div class="col-lg-6 col-md-6 mx-auto h-100">
+                    <div class="card h-100">
+                        <div class="card-header font-weight-bold"> <i class="fa fa-chevron-left cursorPointer backtopeopleservicespage mr-3"></i>
+                            Invite </div>
+                        <div class="card-body">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <!-- <li class="nav-item">                                    <a class="active show nav-link" id="pills-home-tab" data-toggle="pill" href="#nav-home" role="tab" aria-controls="pills-home" aria-selected="false">People</a>                                </li>                                <li class="nav-item">                                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#nav-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Services</a>                                </li> -->
+                                <!-- <li class="nav-item">                                    <a class="active show nav-link" id="pills-profile-tab" data-toggle="pill" href="#nav-invite" role="tab" aria-controls="pills-profile" aria-selected="false">Invite</a>                                </li> -->
+                            </ul>
+                            <div class="tab-content pl-3 pt-2" id="nav-tabContent">
+                                <!-- <div class="tab-pane fade active show" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">                                    <form>                                        <div class="form-group">                                            <div class="input-group mb-2 mr-sm-2">                                                <div class="input-group-prepend">                                                  <div class="input-group-text"><i class="fa fa-search"></i></div>                                                </div>                                                <input type="text" class="form-control" id="showsimilaruserinput" placeholder="Username">                                              </div>                                        </div>                                    </form>                                    <ul class="list-group list-group-flush showsimilarusers">                                                                                </ul>                                </div>                                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">                                    <div class="list-group">                                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">                                                <div class="d-flex w-100">                                                    <div class="image img-cir img-40">                                                        <img src="images/icon/blank100.png" alt="serivce" class="">                                                    </div>                                                    <div class="flex-grow-1 ml-2">                                                        <h5 class="mb-1 w-75 pull-left" >Coming Soon</h5>                                                        <small class="w-25 serviceaddicon" style=""><i class="fa fa-plus"></i></small>                                                        <p class="mb-1 sercicedescpara">Coming Soon</p>                                                    </div>                                                                                                    </div>                                                      </a>                                         </div>                                </div> -->
+                                <div class="tab-pane fade active show" id="nav-invite" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                    <form action="" id="userinvitefrom">
+                                        <div class="form-group"> <label for="cc-payment" class="control-label mb-1">Your
+                                                friends gmail</label> <input id="invite-email" name="cc-payment" type="text" class="form-control" aria-required="true" aria-invalid="false" value="" placeholder="name@gmail.com"> </div>
+                                        <div> <button id="invitebyemail-button" type="submit" class="btn btn-lg btn-info btn-block">
+                                                <span id="payment-button-amount">Invite</span> </button> </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row h-100 justify-content-center align-items-center flex-grow-1  dashboardPage requestsPageUI "
+                style="">
+                <div class="col-lg-6 col-md-6 mx-auto h-100">
+                    <div class="card h-100 text-white bg-info">
+                        <div class="card-header font-weight-bold"> <i class="fa fa-chevron-left cursorPointer showmaindashboard mr-3"></i>
+                            Requests </div>
+                        <div class="card-body channel-requests-holder">
+                            <div class="channel-requests">
+                                <p>Users want to join <span>Warehours 1</span></p>
+                                <hr>
+                                <ul class="list-group list-group-flush mb-5">
+                                    <li class="list-group-item d-flex text-white bg-info">
+                                        <div class="image img-cir img-30"> <img src="images/icon/blank100.png" alt="serivce"
+                                                class="cuserAvatar"> </div>
+                                        <div class="flex-grow-1 ml-3"> <span>User name</span> </div>
+                                        <div class="tools"> <i class="fa fa-times cursorPointer mr-3" aria-hidden="true"></i>
+                                            <i class="fa fa-check cursorPointer mr-3" aria-hidden="true"></i> </div>
+                                    </li>
+                                    <li class="list-group-item d-flex text-white bg-info">
+                                        <div class="image img-cir img-30"> <img src="images/icon/blank100.png" alt="serivce"
+                                                class="cuserAvatar"> </div>
+                                        <div class="flex-grow-1 ml-3"> <span>User name</span> </div>
+                                        <div class="tools"> <i class="fa fa-times cursorPointer mr-3" aria-hidden="true"></i>
+                                            <i class="fa fa-check cursorPointer mr-3" aria-hidden="true"></i> </div>
+                                    </li>
+                                    <li class="list-group-item d-flex text-white bg-info">
+                                        <div class="image img-cir img-30"> <img src="images/icon/blank100.png" alt="serivce"
+                                                class="cuserAvatar"> </div>
+                                        <div class="flex-grow-1 ml-3"> <span>User name</span> </div>
+                                        <div class="tools"> <i class="fa fa-times cursorPointer mr-3" aria-hidden="true"></i>
+                                            <i class="fa fa-check cursorPointer mr-3" aria-hidden="true"></i> </div>
+                                    </li>
+                                    <li class="list-group-item d-flex text-white bg-info">
+                                        <div class="image img-cir img-30"> <img src="images/icon/blank100.png" alt="serivce"
+                                                class="cuserAvatar"> </div>
+                                        <div class="flex-grow-1 ml-3"> <span>User name</span> </div>
+                                        <div class="tools"> <i class="fa fa-times cursorPointer mr-3" aria-hidden="true"></i>
+                                            <i class="fa fa-check cursorPointer mr-3" aria-hidden="true"></i> </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="channel-requests">
+                                <p>Users want to join <span>Logistics</span></p>
+                                <hr>
+                                <ul class="list-group list-group-flush mb-5">
+                                    <li class="list-group-item d-flex text-white bg-info">
+                                        <div class="image img-cir img-30"> <img src="images/icon/blank100.png" alt="serivce"
+                                                class="cuserAvatar"> </div>
+                                        <div class="flex-grow-1 ml-3"> <span>User name</span> </div>
+                                        <div class="tools"> <i class="fa fa-times cursorPointer mr-3" aria-hidden="true"></i>
+                                            <i class="fa fa-check cursorPointer mr-3" aria-hidden="true"></i> </div>
+                                    </li>
+                                    <li class="list-group-item d-flex text-white bg-info">
+                                        <div class="image img-cir img-30"> <img src="images/icon/blank100.png" alt="serivce"
+                                                class="cuserAvatar"> </div>
+                                        <div class="flex-grow-1 ml-3"> <span>User name</span> </div>
+                                        <div class="tools"> <i class="fa fa-times cursorPointer mr-3" aria-hidden="true"></i>
+                                            <i class="fa fa-check cursorPointer mr-3" aria-hidden="true"></i> </div>
+                                    </li>
+                                    <li class="list-group-item d-flex text-white bg-info">
+                                        <div class="image img-cir img-30"> <img src="images/icon/blank100.png" alt="serivce"
+                                                class="cuserAvatar"> </div>
+                                        <div class="flex-grow-1 ml-3"> <span>User name</span> </div>
+                                        <div class="tools"> <i class="fa fa-times cursorPointer mr-3" aria-hidden="true"></i>
+                                            <i class="fa fa-check cursorPointer mr-3" aria-hidden="true"></i> </div>
+                                    </li>
+                                    <li class="list-group-item d-flex text-white bg-info">
+                                        <div class="image img-cir img-30"> <img src="images/icon/blank100.png" alt="serivce"
+                                                class="cuserAvatar"> </div>
+                                        <div class="flex-grow-1 ml-3"> <span>User name</span> </div>
+                                        <div class="tools"> <i class="fa fa-times cursorPointer mr-3" aria-hidden="true"></i>
+                                            <i class="fa fa-check cursorPointer mr-3" aria-hidden="true"></i> </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row h-100 justify-content-center align-items-center flex-grow-1  dashboardPage chatBox talkeeChatUi"
+                style="">
+                <div class="col-lg-11 desk-ml-100 h-100 p-0">
+                    <div class="h-100 au-card au-card--no-shadow au-card--no-pad ">
+                        <div class="h-100 au-inbox-wrap">
+                            <div class="h-100 au-chat ">
+                                <div class="au-chat__title" style="">
+                                    <div class="au-chat-back cursorPointer showmaindashboard"> <img src="images/Back.png"
+                                            class="icon-large" /> </div>
+                                    <div class="au-chat-info" style="">
+                                        <div class="avatar-wrap online">
+                                            <div class="avatar avatar--small"> <img src="images/icon/avatar-02.jpg" alt="John Smith">
+                                            </div>
+                                        </div> <span class="au-sender-name d-sm-none d-xs-none d-none d-lg-block d-md-block"></span>
+                                        <span class="au-kick-user pull-right">Kick</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7 mx-auto">
+                                    <div class="au-chat__content_only_recordtrigger" style="display: none;">
+                                        <!--button
+                                            data-recording="0" class="au-input-icon-left record-trigger d-lg-none d-xl-none">
+                                            <img src="images/Record_Large.png" class="record-img" />
+                                        </button-->
+                                        <button
+                                            data-recording="0" class="au-input-icon-left vlayer-record record-trigger d-lg-none d-xl-none">
+                                            <img src="images/Record_Large.png" class="record-img" />
+                                        </button>
+                                        <!--<span class="fullchatshowtrigger switchtofullchatbox"><i class="fa fa-comment"></i></span>-->
+                                        <form class="au-form-icon"> <button class="au-input-icon-2 switchtofullchatbox"
+                                                id="">
+                                                <!--<i class="zmdi zmdi-file"></i>--> <img src="images/Text.png" class="icon-large" />
+                                            </button> <button class="au-input-icon" id="uploadFiles">
+                                                <!--<i class="zmdi zmdi-file"></i>--> <img src="images/File.png" class="icon-large" />
+                                            </button> <input id="fileUploadCapture" type="file" accept="image/*|audio/mp3"
+                                                capture="camera" style="display: none;"> </form>
+                                    </div>
+                                    <div class="au-mainchatbox">
+                                        <div class="au-chat__content au-chat__content2 js-scrollbar5" id="talkeeChatMainBox">
+                                            <div class="recei-mess-wrap">
+                                                <div class="recei-mess__inner">
+                                                    <div class="avatar avatar--tiny"> <img src="images/icon/avatar-02.jpg"
+                                                            alt="John Smith"> </div>
+                                                    <div class="recei-mess-list">
+                                                        <div class="recei-mess">Lorem ipsum dolor sit amet elit</div>
+                                                    </div>
+                                                </div> <span class="mess-time">06:46</span>
+                                            </div>
+                                            <div class="send-mess-wrap">
+                                                <div class="send-mess__inner">
+                                                    <div class="send-mess-list">
+                                                        <div class="send-mess">Lorem ipsum dolor sit amet elit</div>
+                                                    </div>
+                                                </div> <span class="mess-time">06:47</span>
+                                            </div>
+                                            <div class="recei-mess-wrap">
+                                                <div class="recei-mess__inner">
+                                                    <div class="avatar avatar--tiny"> <img src="images/icon/avatar-02.jpg"
+                                                            alt="John Smith"> </div>
+                                                    <div class="recei-mess-list">
+                                                        <div class="recei-mess mess-audio"> <audio controls="" style="">
+                                                                <source src="horse.ogg" type="audio/ogg">
+                                                                <source src="horse.mp3" type="audio/mpeg"> Your browser
+                                                                does not support the audio element. </audio> </div>
+                                                    </div>
+                                                </div> <span class="mess-time">06:48</span>
+                                            </div>
+                                            <div class="send-mess-wrap">
+                                                <div class="send-mess__inner">
+                                                    <div class="send-mess-list">
+                                                        <div class="send-mess mess-image"> <img src="images/bg-title-02.jpg"
+                                                                alt="John Smith"> </div>
+                                                    </div>
+                                                </div> <span class="mess-time">06:49</span>
+                                            </div>
+                                            <div class="recei-mess-wrap">
+                                                <div class="recei-mess__inner">
+                                                    <div class="avatar avatar--tiny"> <img src="images/icon/avatar-02.jpg"
+                                                            alt="John Smith"> </div>
+                                                    <div class="recei-mess-list">
+                                                        <div class="recei-mess mess-file"> <span>File_name.pdf</span>
+                                                            <span class="file-downicon"><i class="fa fa-download"></i></span>
+                                                        </div>
+                                                    </div>
+                                                </div> <span class="mess-time">06:50</span>
+                                            </div>
+                                        </div>
+                                        <div class="au-chat-textfield">
+                                            <form class="au-form-icon">
+                                                <!-- <button data-recording="0" class="au-input-icon-left record-trigger d-lg-none d-xl-none">                                                <i class="fa fa-microphone"></i>                                            </button> -->
+                                                <input class="au-input au-input--full au-input--h65" type="text">
+                                                <!-- <button class="au-input-icon-3 switchtorecordscreenonly d-lg-none d-md-none d-sm-block d-xs-block" id="">                                                <img src="images/Text.png" class="icon-large">                                            </button> -->
+                                                <button type="button" class="au-input-icon au-input-icon-4" id="uploadFiles">
+                                                    <img src="images/File.png" class="icon" /> </button> <input id="fileUploadCapture"
+                                                    type="file" accept="image/*|audio/mp3" capture="camera" style="display: none;">
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row h-100 flex-grow-1 dashboardPage em_m75 addPeopleServicesPage  position-relative" style="">
+                <div class="rounds-holder w-100 ">
+                    <div class="peoplesHolder">
+                        <div class="iconItem icon-item-green showInviteUI" style="">
+                            <!--<span class="image iconImage img-box img-70 cursorPointer centerIconWrap" style=""><i class="fa fa-user centerIcon"></i></span>-->
+                            <img src="images/Import.png" height="64" class="icon64"> <span class="iconName" style="">Invite</span>
+                        </div>
+                        <div class="iconItem icon-item-orange " style="">
+                            <!--<span class="image iconImage img-box img-70 cursorPointer centerIconWrap" style=""><i class="fa fa-link centerIcon"></i></span>-->
+                            <img src="images/Invite.png" height="64" class="icon64"> <span class="iconName" style="">Share
+                                Link</span> </div>
+                    </div>
+                    <div class="servicesHolder">
+                        <div class="list-group col-lg-12"> <a href="#" class="list-group-item list-group-item-action flex-column align-items-start col-lg-3">
+                                <div class="d-flex w-100">
+                                    <div class="image img-cir img-40"> <img src="images/icon/blank100.png" alt="serivce"
+                                            class=""> </div>
+                                    <div class="flex-grow-1 ml-2">
+                                        <h5 class="mb-1 w-75 pull-left">Coming Soon</h5> <small class="w-25 serviceaddicon"
+                                            style="">
+                                            <!-- <i class="fa fa-plus"></i> --></small>
+                                        <p class="mb-1 sercicedescpara">Coming Soon</p>
+                                    </div>
+                                </div>
+                            </a> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row h-100 flex-grow-1  dashboardPage mainDashboardContainer position-relative" style="">
+                <div class="rounds-holder w-100 mainroundsholder">
+                    <div class="col-md-12 d-lg-none d-xl-none maxheight56 pl-0">
+                        <div class="form-group search-field active-channel-users-search searchChannelOrUsers mr-2">
+                            <div class="blinkcursor input-group mt-2 mr-sm-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><img src="images/Search_Dark.png" class="icon15" /></div>
+                                </div> <input type="text" class="form-control" id="" placeholder=""> <i></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="iconItem icon-item-yellow exploreChannels" style=""> <span class="image iconImage img-cir cursorPointer centerIconWrap"
+                            style=""><img src="images/Channels.png" class="icon-large" /></span> <span class="iconName"
+                            style="">Channels</span> </div>
+                    <div class="iconItem icon-item-green addmultiplethings" style="" data-add="user-to-portal"> <span
+                            class="image iconImage img-cir cursorPointer centerIconWrap" style=""><img src="images/Create_Channel_circle.png"
+                                class="icon-large" /></span> <span class="iconName" style="color: #69cfa4;">Add</span>
+                    </div>
+                    <div class="iconItem icon-item-blue requestshandleUItrigger" style="" data-add="user-to-portal">
+                        <span class="image iconImage img-cir img-70 cursorPointer centerIconWrap" style=""></span>
+                        <span class="iconName" style="">Requests</span> </div>
+                    <div class="active-channel-users" style="display: none;"></div>
+                    <div id="active-portal-channels" class="portalchannelsholder" style="display: none;"></div>
+                </div>
+            </div> <!-- END PAGE CONTAINER-->
+        </div>
+        <div class="" id="now_player_icon" style="display: none">
+            <div class="image img-cir img-50 cursorPointer"> <img src="images/icon/avatar1.jpg" alt="avatar" class="now_player_icon_avatar">
+            </div> <span class="now_player_icon_loading"><img src="images/icon/loading_dots.gif" alt="playing" class=""></span>
+        </div>
+    </div> <!-- modal static -->
+    <div class="modal fade" id="staticModal" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" aria-hidden="true"
+        data-backdrop="static">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticModalLabel">Edit Name</h5> <button type="button" class="close"
+                        data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group"> <input id="cc-pament" name="cc-payment" type="text" class="form-control"
+                            aria-required="true" aria-invalid="false" value=""> </div>
+                </div>
+                <div class="modal-footer"> <button type="button" class="btn btn-primary">Apply</button> </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="statusmodel" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" aria-hidden="true"
+        data-backdrop="static">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticModalLabel">Edit Status</h5> <button type="button" class="close"
+                        data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <div class="col-12 col-md-12"> <select name="select" id="select" class="form-control">
+                                <option value="">Please select</option>
+                                <option value="Online">Online</option>
+                                <option value="Busy">Busy</option>
+                                <option value="Away">Away</option>
+                            </select> </div>
+                    </div>
+                </div>
+                <div class="modal-footer"> <button type="button" class="btn btn-primary">Apply</button> </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="avatarModal" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" aria-hidden="true"
+        data-backdrop="static">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticModalLabel">Edit Avatar</h5> <button type="button" class="close"
+                        data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                </div>
+                <div class="modal-body avatarsamplelist">
+                    <div class="image img-cir img-70 cursorPointer sampleAvatarset"> <img src="images/icon/avatar1.jpg"
+                            alt="John Doe"> </div>
+                    <div class="image img-cir img-70 cursorPointer sampleAvatarset"> <img src="images/icon/avatar2.jpg"
+                            alt="John Doe"> </div>
+                    <div class="image img-cir img-70 cursorPointer sampleAvatarset"> <img src="images/icon/avatar3.jpg"
+                            alt="John Doe"> </div>
+                    <div class="image img-cir img-70 cursorPointer sampleAvatarset"> <img src="images/icon/avatar4.jpg"
+                            alt="John Doe"> </div>
+                    <div class="image img-cir img-70 cursorPointer sampleAvatarset"> <img src="images/icon/avatar5.jpg"
+                            alt="John Doe"> </div>
+                    <div class="image img-cir img-70 cursorPointer sampleAvatarset"> <img src="images/icon/avatar6.jpg"
+                            alt="John Doe"> </div>
+                    <div class="image img-cir img-70 cursorPointer centerIconWrap app-backcolor-green" id="uploadAvatarTrigger">
+                        <i class="fa fa-plus centerIcon"></i> </div>
+                    <form action="" id="uploadAvatarForm" style="display: none;"> <input id="avatarCapture" type="file"
+                            capture="" style="display: none;"> </form>
+                    <!-- <div class="image img-cir img-70 cursorPointer centerIconWrap app-backcolor-red blankAvatarset"> <i
+                            class="fa fa-trash centerIcon"></i> </div> -->
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class="modal fade" id="copyJoinLinkModal" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" aria-hidden="true"
+        data-backdrop="static">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticModalLabel">Copy Link</h5> <button type="button" class="close"
+                        data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group"> <input id="cc-pament" name="cc-payment" type="text" class="form-control"
+                            aria-required="true" aria-invalid="false" value=""> </div>
+                </div>
+                <div class="modal-footer"> <button type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close">Close</button> </div>
+            </div>
+        </div>
+    </div>
+    <!-- end modal static -->
+    <!-- dashboard end -->
+    <!-- <script src="dist/vendorsJS.js?v=1.0.756412879"></script> -->
+    <!-- Jquery JS-->
+    <!-- <script src="vendor/jquery-3.2.1.min.js"></script> -->
+    <!-- Bootstrap JS-->
+    <!-- <script src="vendor/bootstrap-4.1/popper.min.js"></script>    <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script> -->
+    <!-- Vendor JS       -->
+    <!--  <script src="vendor/slick/slick.min.js">    </script> -->
+    <!-- <script src="vendor/wow/wow.min.js"></script> -->
+    <!-- <script src="vendor/animsition/animsition.min.js"></script> -->
+    <!-- <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">    </script> -->
+    <!-- <script src="vendor/counter-up/jquery.waypoints.min.js"></script>    <script src="vendor/counter-up/jquery.counterup.min.js">    </script> -->
+    <!-- <script src="vendor/circle-progress/circle-progress.min.js"></script> -->
+    <!-- <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script> -->
+    <!-- <script src="vendor/chartjs/Chart.bundle.min.js"></script>    <script src="vendor/select2/select2.min.js">    </script> -->
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-messaging.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-storage.js"></script> <!-- Main JS-->
+    <!-- <script src="js/main.js?v=1.0.756412879"></script>        <script src="dist/app.js?v=1.0.756412879"></script> -->
+    <div id="mainaudio-player" style="display: none"> </div> 
+    <audio controls="" style="" style="display: none" id="onrecordtone">
+        <source src="tones/onrecordtone.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+
+    <iframe src="tones/silencetone.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+    <audio id="pagealive-player" autoplay loop style="display: none">
+        <source src="tones/silencetone.mp3" type="audio/mp3">
+    </audio>
+
+
+    <script src="audiojs/audio.min.js"></script>
+    
+</body>
+
+</html><!-- end document-->

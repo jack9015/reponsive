@@ -1,0 +1,16 @@
+{
+  "name": "Talkee",
+  "short_name": "Talkee",
+  "description": "Enterprise Voice IM | Super fast voice messenger for teams, fleets and warehouse",
+  "start_url": "index.html",
+  "background_color": "#f8f8f8",
+  "theme_color": "#6a0cc5",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "images/icon/talkee-large.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ]
+}

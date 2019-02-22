@@ -1,0 +1,7 @@
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /talkee/dist/index.php?path=$1 [NC,L,QSA]
+RewriteRule index.html /talkee/dist/index.php?path=$1 [NC,L,QSA]
+
